@@ -146,31 +146,24 @@
  * User Interface
  * ==============
  */
-
-/* Arrows */
 .CodeMirror-foldgutter-open:after {
     content: "-";
     font-size: 1.2em;
-    font-weight: bold;
+    font-weight: 100;
     color: #aaaaaa;
     opacity: 0.35;
 }
-
 .CodeMirror-foldgutter-folded:after {
     content: "+";
     font-size: 1.2em;
     font-weight: bold;
-    color: #aaaaaa;
-
     background-color: transparent !important;
     color: #1dff00 !important;
     text-shadow: 0 0 10px #1dff00;
 }
-
 .CodeMirror-foldgutter, .CodeMirror-foldgutter-open, .CodeMirror-foldgutter-folded, .CodeMirror-foldgutter-blank {
     margin-right: 10px;
 }
-
 .CodeMirror {
     border-left-color: #1B1B1B;
     background: #1c1c1c;
