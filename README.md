@@ -11,4 +11,4 @@ Features
 
 Screenshot
 ===============
-![Brackets-Stripper](http://s12.postimg.org/tpovj7j1p/stripper_ui.png)
+![Brackets-Stripper](http://i59.tinypic.com/2j624vr.png)
