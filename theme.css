@@ -153,6 +153,7 @@
     font-size: 1.2em;
     font-weight: bold;
     color: #aaaaaa;
+    opacity: 0.35;
 }
 
 .CodeMirror-foldgutter-folded:after {
