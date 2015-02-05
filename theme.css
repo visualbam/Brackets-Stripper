@@ -167,6 +167,10 @@
     text-shadow: 0 0 10px #1dff00;
 }
 
+.CodeMirror-foldgutter, .CodeMirror-foldgutter-open, .CodeMirror-foldgutter-folded, .CodeMirror-foldgutter-blank {
+    margin-right: 10px;
+}
+
 .CodeMirror {
     border-left-color: #1B1B1B;
     background: #1c1c1c;
@@ -182,6 +186,7 @@ div.CodeMirror-selected {
 }
 .CodeMirror-linenumber {
     color: #5c5c5c;
+    padding: 0 10px 0 5px;
 }
 .CodeMirror-cursor {
     border-left: 1px solid #fff !important;
