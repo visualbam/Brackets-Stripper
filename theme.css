@@ -150,8 +150,7 @@
     content: "-";
     font-size: 1.2em;
     font-weight: 100;
-    color: #aaaaaa;
-    opacity: 0.35;
+    color: rgb(149, 148, 148);
 }
 .CodeMirror-foldgutter-folded:after {
     content: "+";
