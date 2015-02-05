@@ -92,6 +92,7 @@
 .CodeMirror-linenumber {
     color: #767676;
 }
+
 /* Extra CSS */
 .CodeMirror.find-highlighting div.CodeMirror-selected,
 .CodeMirror .CodeMirror.find-highlighting div.CodeMirror-selected {
@@ -146,20 +147,31 @@
  * ==============
  */
 
-.CodeMirror,
-.CodeMirror .CodeMirror-scroll {
-    background: #1c1c1c;
-    color: #F8F8F2;
+/* Arrows */
+.CodeMirror-foldgutter-open:after {
+    content: "-";
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #aaaaaa;
 }
+
+.CodeMirror-foldgutter-folded:after {
+    content: "+";
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #aaaaaa;
+
+    background-color: transparent !important;
+    color: #1dff00 !important;
+    text-shadow: 0 0 10px #1dff00;
+}
+
 .CodeMirror {
     border-left-color: #1B1B1B;
     background: #1c1c1c;
 }
 div.CodeMirror-selected {
     background: #444 !important;
-}
-.CodeMirror-gutters {
-    background: #1c1c1c;
 }
 .CodeMirror-guttermarker {
     color: #F8F8F2;
