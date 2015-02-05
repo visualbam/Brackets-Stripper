@@ -1,5 +1,5 @@
 # Brackets-Stripper
-UI Theme for Brackets
+UI Theme for Brackets. Useses modified version of Monokai Dark Soda for syntax highlighting.
 
 Screenshot
 ===============
