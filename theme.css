@@ -275,3 +275,6 @@ div.CodeMirror-selected {
 .jstree-brackets li.jstree-closed > a, .jstree-brackets li.jstree-open > a {
     color: white;
 }
+.jstree-brackets li.git-ignored > a, .open-files-container li.git-ignored > a {
+    color: rgba(128, 128, 128, 0.5)!important;
+}
