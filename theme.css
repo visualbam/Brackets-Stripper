@@ -109,7 +109,7 @@
     color: #fff;
 }
 .CodeMirror .CodeMirror-selected {
-    background: rgba(33, 171, 216, 0.75)!important;
+    background: rgba(33, 171, 216, 0.5)!important;
 /*    border: 1px solid rgb(130, 224, 255);*/
 }
 .CodeMirror-focused .CodeMirror-selected {
