@@ -1,0 +1,20 @@
+{
+    "title": "Stripper",
+    "name": "stripper-theme",
+    "description": "A brackets theme focused on readabiity.",
+    "version": "0.0.1",
+    "author": "Bruce McElroy <bruce.mcelroy@gmail.com>",
+    "homepage": "https://github.com/visualbam",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:visualbam"
+    },
+    "license": "MIT",
+    "engines": {
+        "brackets": ">=0.42.0"
+    },
+    "theme": {
+        "file": "theme.css",
+        "dark": true
+    }
+}
