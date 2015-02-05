@@ -4,14 +4,14 @@
     "description": "A brackets theme focused on readabiity.",
     "version": "0.0.1",
     "author": "Bruce McElroy <bruce.mcelroy@gmail.com>",
-    "homepage": "https://github.com/visualbam",
+    "homepage": "https://github.com/visualbam/",
     "repository": {
         "type": "git",
-        "url": "git@github.com:visualbam"
+        "url": "https://github.com/Visualbam/Brackets-Stripper"
     },
     "license": "MIT",
     "engines": {
-        "brackets": ">=0.42.0"
+        "brackets": ">=1.1.0"
     },
     "theme": {
         "file": "theme.css",
