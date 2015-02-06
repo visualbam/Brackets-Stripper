@@ -20,3 +20,5 @@ Installing
 * Navigate in the top menu: `File` > `Extension Manager`
 * Drop zip file in bottom left corner of the dialog box
 ![Brackets-Stripper](http://i57.tinypic.com/ajvxcp.png)
+
+For this to be seen properly you must install https://github.com/notasz/brackets-uitheming
