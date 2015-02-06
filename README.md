@@ -1,5 +1,6 @@
 # Brackets-Stripper
 UI Theme for Brackets. Useses modified version of Monokai Dark Soda for syntax highlighting.
+For this to be seen properly you must install https://github.com/notasz/brackets-uitheming
 
 Features
 ===============
@@ -20,5 +21,3 @@ Installing
 * Navigate in the top menu: `File` > `Extension Manager`
 * Drop zip file in bottom left corner of the dialog box
 ![Brackets-Stripper](http://i57.tinypic.com/ajvxcp.png)
-
-For this to be seen properly you must install https://github.com/notasz/brackets-uitheming
