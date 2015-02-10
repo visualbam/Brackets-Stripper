@@ -4,7 +4,7 @@ For this to be seen properly you must install https://github.com/notasz/brackets
 
 Screenshot
 ===============
-![Brackets-Stripper](http://i62.tinypic.com/2wp3tl3.png)
+![Brackets-Stripper](http://i57.tinypic.com/6o2441.png)
 
 Features
 ===============
