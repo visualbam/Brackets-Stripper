@@ -290,6 +290,7 @@ div.CodeMirror-selected {
 #main-toolbar {
     width: 40px;
     padding: 7px 5px;
+    z-index: 100;
 }
 
 #project-files-container {
