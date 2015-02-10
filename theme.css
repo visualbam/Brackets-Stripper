@@ -217,6 +217,16 @@ div.CodeMirror-selected {
  * ==========
  */
 
+/* Trailing whitespace */
+.cm-dk-whitespace-space:before, .cm-dk-whitespace-tab:before {
+    background-color: rgba(128, 128, 128, 0.15);
+}
+.cm-dk-whitespace-leading-space:before, .cm-dk-whitespace-leading-tab:before {
+    background-color: rgba(128, 128, 128, 0.15);
+}
+.cm-dk-whitespace-trailing-space:before, .cm-dk-whitespace-trailing-tab:before {
+    background-color: red;
+}
 
 /* File Icons */
 ins.jstree-icon {
