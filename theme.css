@@ -217,7 +217,80 @@ div.CodeMirror-selected {
  * ==========
  */
 
+
+/* Git */
+#sidebar .git-close-not-modified {
+    display: none;
+}
+
+.btn-alt-quiet {
+    transition: all 0.25s ease-in-out;
+}
+#project-files-header .btn-alt-quiet:hover {
+    background: rgba(38, 40, 42, 1)!important;
+    box-shadow: none;
+}
+
+#project-files-header {
+    background: #333639;
+    position: relative;
+    top: -1px;
+    padding: 12px 0 5px 12px;
+}
+
+#project-dropdown-toggle {
+    margin: -3px 12px -2px -6px;
+}
+
+/* Working files*/
+.btn-mainToolbar-bks, .btn-sidebar-bks, .all-workfile, .avril-parent-work .working-set-splitview-btn, .avril-parent-work .working-set-option-btn {
+    top: 10px!important;
+}
+
+.btn-mainToolbar-bks, .btn-sidebar-bks, .all-workfile {
+    margin-right: 15px;
+}
+
+.btn-sidebar-bks {
+    color: rgba(33, 171, 216, 1);
+}
+
+/* Tabs */
+.avril-parent-work {
+    box-shadow: -10px 0px 19px -5px rgba(0,0,0,0.5);
+    z-index: 10;
+}
+
+.avril-tabs-work ul li.selected {
+    border-bottom: 3px solid rgba(33, 171, 216, 1);
+    height: 20px!important;
+}
+
+.avril-tabs-work li:hover {
+    background: rgb(38, 40, 42)!important;
+    height: 20px!important;
+    border-bottom: 3px solid rgba(33, 171, 216, 1);
+}
+
+.open-files-container ul li:before {
+    display: none;
+}
+
+.avril-parent-work, .todoFunction, .avril-tabs-work li, .open-files-container ul, .avril-tabs-work div {
+    height: 40px;
+}
+
+.avril-tabs-work li {
+    padding: 8px 25px;
+    height: 40px!important;
+}
+
 /*Brackets UI Theme*/
+
+#main-toolbar {
+    width: 40px;
+    padding: 7px 5px;
+}
 
 #project-files-container {
     padding-left: 5px;
