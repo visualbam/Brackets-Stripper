@@ -218,8 +218,13 @@ div.CodeMirror-selected {
  */
 
 
+/* File Icons */
+ins.jstree-icon {
+    font-size: 12px!important;
+}
+
 /* Git */
-#sidebar .git-close-not-modified {
+#sidebar .git-close-not-modified i {
     display: none;
 }
 
@@ -239,7 +244,7 @@ div.CodeMirror-selected {
 }
 
 #project-dropdown-toggle {
-    margin: -3px 12px -2px -6px;
+    margin: -3px 12px -2px -5px;
 }
 
 /* Working files*/
