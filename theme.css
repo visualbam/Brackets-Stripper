@@ -281,7 +281,7 @@ ins.jstree-icon {
     display: none;
 }
 
-.avril-parent-work, .todoFunction, .avril-tabs-work li, .open-files-container ul, .avril-tabs-work div {
+.avril-parent-work, .todoFunction, .avril-tabs-work li, .avril-tabs-work div {
     height: 40px;
 }
 
@@ -296,6 +296,10 @@ ins.jstree-icon {
     width: 40px;
     padding: 7px 5px;
     z-index: 100;
+}
+
+#working-set-list-container>div:last-child ul {
+    padding-bottom: 10px;
 }
 
 #project-files-container {
