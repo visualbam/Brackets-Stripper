@@ -29,10 +29,3 @@ If you would like your Brackets to look like the screenshot you must install the
 * https://github.com/DH3ALEJANDRO/custom-work-for-brackets
 * https://github.com/Carreau/brackets-visualTabs
 * https://github.com/MiguelCastillo/Brackets-wsSanitizer
-
-Installing
-===============
-* Download this project as a zip file
-* Navigate in the top menu: `File` > `Extension Manager`
-* Drop zip file in bottom left corner of the dialog box
-![Brackets-Stripper](http://i57.tinypic.com/ajvxcp.png)
