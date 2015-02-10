@@ -261,6 +261,10 @@ ins.jstree-icon {
 }
 
 /* Tabs */
+#working-set-list-container>div:last-child ul {
+    padding-bottom: 15px!important;
+}
+
 .avril-parent-work {
     box-shadow: -10px 0px 19px -5px rgba(0,0,0,0.5);
     z-index: 10;
@@ -291,11 +295,14 @@ ins.jstree-icon {
 }
 
 /*Brackets UI Theme*/
-
 #main-toolbar {
-    width: 40px;
-    padding: 7px 5px;
-    z-index: 100;
+    background: #242424;
+    padding: 0;
+}
+
+#main-toolbar .buttons > a, #main-toolbar .bottom-buttons > a, #main-toolbar .bottom-buttons > a:hover {
+    font-size: 18px!important;
+    text-decoration: none;
 }
 
 #working-set-list-container>div:last-child ul {
