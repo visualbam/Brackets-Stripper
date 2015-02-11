@@ -1,0 +1,406 @@
+/**
+* Dark Soda Theme (https://github.com/rainje/Monokai-Dark-Soda)
+* --------------------------------------------------------------------*/
+
+/* Define some variables used in multiple places */
+@background: #242424;
+@foreground: #F8F8F2;
+
+/* Code Styling */
+.CodeMirror, .CodeMirror-scroll {
+    background-color: @background;
+    color: @foreground;
+}
+
+.CodeMirror-focused .CodeMirror-activeline-background {
+    background: #3C3F41;
+    color: #d9d9d9;
+}
+
+&.show-line-padding .CodeMirror-focused .CodeMirror-activeline-background {
+    box-shadow: inset 15px 0 0 0 #000;
+}
+
+.CodeMirror-focused .CodeMirror-activeline {
+    .CodeMirror-gutter-elt {
+        background-color: #3C3F41;
+        color: #d9d9d9;
+    }
+    .inline-widget .CodeMirror-gutter-elt {
+        background-color: #3C3F41;
+        color: #d9d9d9;
+    }
+}
+
+/* e.g. var, function */
+.cm-keyword  {color: #ff007f;}
+/* e.g. CoffeeScript ->, CSS colons */
+.cm-operator {color: #ff007f;}
+/* e.g. HTML elements */
+.cm-tag  {color: #ff007f !important;}
+/* e.g. #id */
+.cm-atom {color: #c48cff;}
+/* e.g. 20 */
+.cm-number {color: #c48cff;}
+/* e.g. $, i */
+.cm-variable {color: #fff;}
+/* e.g. for key in [this], Markdown li */
+.cm-variable-2 {color: #c48cff;}
+/* e.g. @include, [this] */
+.cm-def {color: #fd963f;}
+/* e.g. getElementbyId, CSS properties */
+.cm-property {color: #52e3f6;}
+/* e.g. // comments */
+.cm-comment {color: #8c8c8c;}
+/* e.g. "string" */
+.cm-string {color: #ece47e;}
+/* e.g. some CSS values */
+.cm-string-2 {color: #ece47e;}
+/* e.g. @font-face */
+.cm-meta {color: #a7ec21;}
+/* e.g. .box */
+.cm-qualifier {color: #a7ec21;}
+/* e.g. class="" id="" */
+.cm-attribute {color: #a7ec21;}
+/* highlighted selection */
+.cm-matchhighlight {background-color: rgba(61,61,61,.23);}
+
+
+/* not sure if used */
+.cm-builtin {color: #a7ec21;}
+.cm-bracket {color: #f9faf4;}
+.cm-plus {color: #85a300;}
+.cm-variable-3 {color: @foreground;}
+.cm-error, .cm-minus {color: #dc322f;}
+.cm-header {color: #d85896;}
+.cm-link {color: #b77fdb; text-decoration: none;}
+.cm-rangeinfo {color: #6c71c4;}
+.cm-quote {color: #6c9ef8;}
+
+/* Extra CSS */
+.CodeMirror-linenumber {
+    color: #767676;
+}
+
+.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
+    color: #fff;
+}
+
+.CodeMirror-cursor {
+    border-left: 1px solid #f8f8f8 !important;
+}
+
+.CodeMirror-gutters {
+    background-color: @background;
+    border-right: none;
+}
+
+.CodeMirror .CodeMirror-selected {
+    background: #3d3d3d;
+    opacity: .23;
+}
+
+.CodeMirror-focused .CodeMirror-selected {
+    background-color: #ffe69d;
+    color: #242424;
+}
+
+.CodeMirror-matchingbracket {
+    color: #a7ec21 !important;
+    background: rgba(255,255,255,0.15);
+}
+
+.CodeMirror-matchingtag {
+    background: rgba(255,255,255,0.15);
+}
+
+.CodeMirror-overwrite .CodeMirror-cursor {
+    border-left: none !important;
+    border-bottom: 1px solid #fff;
+}
+
+.CodeMirror-searching {
+    background-color: #d3cd69;
+    &.searching-current-match {
+        background-color: #f6a644;
+    }
+}
+
+
+/**
+* User Interface
+* ==============
+*/
+
+.CodeMirror {
+    border-left-color: #1B1B1B;
+    background: #1c1c1c;
+}
+div.CodeMirror-selected {
+    background: #444 !important;
+}
+.CodeMirror-guttermarker {
+    color: #F8F8F2;
+}
+.CodeMirror-guttermarker-subtle {
+    color: #272822;
+}
+.CodeMirror-linenumber {
+    color: #5c5c5c;
+    padding: 0 10px 0 5px;
+}
+.CodeMirror-cursor {
+    border-left: 1px solid #fff !important;
+    box-shadow: 0 0 10px white;
+}
+.CodeMirror-activeline-background,
+.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
+    background: #2c2c2c !important;
+}
+.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
+    color: #fff;
+    text-shadow: 0 0 3px white;
+}
+.CodeMirror-focused .CodeMirror-activeline .inline-widget .CodeMirror-gutter-elt {
+    color: #767676;
+}
+.CodeMirror-matchingbracket {
+    background-color: transparent !important;
+    color: #1dff00 !important;
+    text-shadow: 0 0 10px #1dff00;
+    font-weight: bold;
+}
+.CodeMirror-nonmatchingbracket {
+    color: #f00 !important;
+    text-shadow: 0 0 10px #f00;
+    backface-visibility: hidden;
+    font-weight: bold;
+}
+.CodeMirror-matchingtag {
+    background-color: transparent;
+    border-bottom: 1px solid #1dff00;
+}
+
+/**
+* Extensions
+* ==========*/
+
+/**
+* Code Folding (https://github.com/thehogfather/brackets-code-folding)
+* --------------------------------------------------------------------*/
+
+.CodeMirror-foldgutter-open:after {
+    content: "-";
+    font-size: 1.2em;
+    font-weight: 100;
+    color: rgb(149, 148, 148);
+}
+
+.CodeMirror-foldgutter-folded:after {
+    content: "+";
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: transparent !important;
+    color: #1dff00 !important;
+    text-shadow: 0 0 10px #1dff00;
+}
+
+.CodeMirror-foldgutter, .CodeMirror-foldgutter-open, .CodeMirror-foldgutter-folded, .CodeMirror-foldgutter-blank {
+    margin-right: 10px;
+}
+
+/**
+* Trailing Whitespace (https://github.com/DennisKehrig/brackets-show-whitespace)
+* --------------------------------------------------------------------*/
+
+.cm-dk-whitespace-space:before, .cm-dk-whitespace-tab:before {
+    background-color: rgba(128, 128, 128, 0.15);
+}
+.cm-dk-whitespace-leading-space:before, .cm-dk-whitespace-leading-tab:before {
+    background-color: rgba(128, 128, 128, 0.15);
+}
+.cm-dk-whitespace-trailing-space:before, .cm-dk-whitespace-trailing-tab:before {
+    background-color: red;
+}
+
+/**
+* File Icons (https://github.com/drewbkoch/Brackets-File-Icons)
+* --------------------------------------------------------------------*/
+
+ins.jstree-icon {
+    font-size: 12px!important;
+}
+
+/**
+* Brackets Git (https://github.com/zaggino/brackets-git)
+* --------------------------------------------------------------------*/
+
+#sidebar .git-close-not-modified i {
+    display: none;
+}
+
+.btn-alt-quiet {
+    transition: all 0.25s ease-in-out;
+}
+
+#project-files-header .btn-alt-quiet:hover {
+    background: rgba(38, 40, 42, 1)!important;
+    box-shadow: none;
+}
+
+#project-files-header {
+    background: #333639;
+    position: relative;
+    top: -1px;
+    padding: 12px 0 5px 12px;
+}
+
+#project-dropdown-toggle {
+    margin: -3px 12px -2px -5px;
+}
+
+/**
+* Custom Work For Brackets (https://github.com/DH3ALEJANDRO/custom-work-for-brackets)
+* --------------------------------------------------------------------*/
+
+.btn-mainToolbar-bks, .btn-sidebar-bks, .all-workfile, .avril-parent-work .working-set-splitview-btn, .avril-parent-work .working-set-option-btn {
+    top: 10px!important;
+}
+
+.btn-mainToolbar-bks, .btn-sidebar-bks, .all-workfile {
+    margin-right: 15px;
+}
+
+.btn-sidebar-bks {
+    color: rgba(33, 171, 216, 1);
+}
+
+#working-set-list-container>div:last-child ul {
+    padding-bottom: 15px!important;
+}
+
+.avril-parent-work {
+    box-shadow: -10px 0px 19px -5px rgba(0,0,0,0.5);
+    z-index: 10;
+}
+
+.avril-parent-work, .todoFunction, .avril-tabs-work li, .avril-tabs-work div {
+    height: 40px;
+}
+
+.avril-tabs-work ul li {
+    padding: 8px 30px 8px 20px;
+    height: 40px!important;
+
+    &.selected {
+        border-bottom: 3px solid rgba(33, 171, 216, 1);
+        height: 20px!important;
+    }
+
+    &:hover {
+        background: rgb(38, 40, 42)!important;
+        height: 20px!important;
+        border-bottom: 3px solid rgba(33, 171, 216, 1);
+    }
+}
+
+.open-files-container ul li:before {
+    display: none;
+}
+
+/**
+* Stripper UI Theme (https://github.com/Visualbam/Brackets-Stripper)
+* --------------------------------------------------------------------*/
+
+// Right bar with extension icons
+#main-toolbar {
+    background: #242424;
+    padding: 0;
+
+    .buttons > a, #main-toolbar .bottom-buttons > a, #main-toolbar .bottom-buttons > a:hover {
+        font-size: 18px!important;
+        text-decoration: none;
+    }
+}
+
+// Text Highlight
+.CodeMirror .CodeMirror-selected {
+    background: rgba(33, 171, 216, 1)!important;
+    /*    border: 1px solid rgb(130, 224, 255);*/
+}
+
+// Working file list for when tabs aren't enabled
+#working-set-list-container > div:last-child ul {
+    padding-bottom: 10px;
+}
+
+#project-files-container {
+    padding: 12px 0 0 5px;
+}
+
+#status-bar,
+#status-indicators {
+    background: #1c1c1c;
+    color: #fff;
+}
+
+#status-info {
+    color: #fff;
+    border-top: none;
+}
+
+#working-set-header {
+    background: #1c1c1c;
+    border-right: none;
+}
+#open-files-container {
+    background: #1c1c1c;
+    border-bottom: 1px solid #4c4c4c;
+}
+
+// Sidebar with file list
+.sidebar {
+    background: #1c1c1c;
+
+    .sidebar-selection {
+        border: none;
+        height: 22px;
+
+        &.triangle-visible:before {
+            background: none;
+            border: none;
+            display: none;
+        }
+    }
+}
+
+.sidebar-selection-triangle
+.sidebar-selection, .filetree-selection {
+    border-bottom: none;
+}
+
+.sidebar-selection-triangle {
+    background: none;
+    border: none;
+    border-right: 1px solid #f00;
+    box-shadow: 0 0 5px #f00;
+    width: 0px;
+}
+
+.sidebar-selection-extension, .filetree-selection-extension {
+    height: 22px;
+    border-bottom: none;
+    border-right: 3px solid rgba(33, 171, 216, 0.75);
+}
+
+.jstree-brackets li .extension, .jstree-brackets li a, .jstree-brackets li a:hover {
+    color: rgba(128, 128, 128, 1);
+}
+
+.jstree-brackets li.jstree-closed > a, .jstree-brackets li.jstree-open > a {
+    color: white;
+}
+
+.jstree-brackets li.git-ignored > a, .open-files-container li.git-ignored > a {
+    color: rgba(128, 128, 128, 0.5)!important;
+}
