@@ -1,6 +1,5 @@
 # Brackets-Stripper
-UI Theme for Brackets. Useses modified version of Monokai Dark Soda for syntax highlighting.
-For this to be seen properly you must install https://github.com/notasz/brackets-uitheming
+UI Theme for Brackets. Useses modified version of [Monokai Dark Soda](https://github.com/rainje/Monokai-Dark-Soda) for syntax highlighting. For this to be seen properly you must install https://github.com/notasz/brackets-uitheming
 
 Screenshot
 ===============
