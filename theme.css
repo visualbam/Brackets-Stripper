@@ -307,6 +307,9 @@ ins.jstree-icon {
 #working-set-list-container > div:last-child ul {
   padding-bottom: 15px!important;
 }
+.avril-tabs-work {
+  background-color: #333639!important;
+}
 .avril-parent-work {
   box-shadow: -10px 0px 19px -5px rgba(0, 0, 0, 0.5);
   z-index: 10;
