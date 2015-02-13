@@ -6,6 +6,11 @@
 @background: #242424;
 @foreground: #F8F8F2;
 
+@emerald: rgb(21, 216, 128);
+@grass: rgb(29, 255, 0);
+@powder: rgba(33, 171, 216, 1);
+@river: rgb(82, 227, 246);
+
 /* Code Styling */
 .CodeMirror, .CodeMirror-scroll {
     background-color: @background;
@@ -49,7 +54,7 @@
 /* e.g. @include, [this] */
 .cm-def {color: #fd963f;}
 /* e.g. getElementbyId, CSS properties */
-.cm-property {color: #52e3f6;}
+.cm-property {color: @river;}
 /* e.g. // comments */
 .cm-comment {color: #8c8c8c;}
 /* e.g. "string" */
@@ -57,17 +62,17 @@
 /* e.g. some CSS values */
 .cm-string-2 {color: #ece47e;}
 /* e.g. @font-face */
-.cm-meta {color: #a7ec21;}
+.cm-meta {color: @grass;}
 /* e.g. .box */
-.cm-qualifier {color: #a7ec21;}
+.cm-qualifier {color: @grass;}
 /* e.g. class="" id="" */
-.cm-attribute {color: #a7ec21;}
+.cm-attribute {color: @grass;}
 /* highlighted selection */
 .cm-matchhighlight {background-color: rgba(61,61,61,.23);}
 
 
 /* not sure if used */
-.cm-builtin {color: #a7ec21;}
+.cm-builtin {color: #15d880;}
 .cm-bracket {color: #f9faf4;}
 .cm-plus {color: #85a300;}
 .cm-variable-3 {color: @foreground;}
@@ -106,7 +111,7 @@
 }
 
 .CodeMirror-matchingbracket {
-    color: #a7ec21 !important;
+    color: #15d880 !important;
     background: rgba(255,255,255,0.15);
 }
 
@@ -178,7 +183,7 @@ div.CodeMirror-selected {
 }
 .CodeMirror-matchingtag {
     background-color: transparent;
-    border-bottom: 1px solid #1dff00;
+    border-bottom: 1px solid @grass;
 }
 
 /**
@@ -263,6 +268,10 @@ ins.jstree-icon {
 * Custom Work For Brackets (https://github.com/DH3ALEJANDRO/custom-work-for-brackets)
 * --------------------------------------------------------------------*/
 
+.AllTabWork, .avril-parent-work, .avril-parent-work .open-files-container ul, .avril-tabs-work, .avril-tabs-work div, .avril-tabs-work li {
+    height: 40px!important;
+}
+
 .btn-mainToolbar-bks, .btn-sidebar-bks, .all-workfile, .avril-parent-work .working-set-splitview-btn, .avril-parent-work .working-set-option-btn {
     top: 10px!important;
 }
@@ -284,23 +293,24 @@ ins.jstree-icon {
     z-index: 10;
 }
 
-.avril-parent-work, .todoFunction, .avril-tabs-work li, .avril-tabs-work div {
+.avril-parent-work, .todoFunction, .avril-tabs-work ul#sortableOneWork li, .avril-tabs-work div {
     height: 40px;
 }
 
-.avril-tabs-work ul li {
+.avril-tabs-work ul#sortableOneWork li {
     padding: 8px 30px 8px 20px;
-    height: 40px!important;
+    height: 20px!important;
 
     &.selected {
-        border-bottom: 3px solid rgba(33, 171, 216, 1);
+        background: rgb(38, 40, 42)!important;
+        border-bottom: 3px solid @powder!important;
         height: 20px!important;
     }
 
     &:hover {
         background: rgb(38, 40, 42)!important;
         height: 20px!important;
-        border-bottom: 3px solid rgba(33, 171, 216, 1);
+        border-bottom: 3px solid @powder;
     }
 }
 
@@ -325,8 +335,7 @@ ins.jstree-icon {
 
 // Text Highlight
 .CodeMirror .CodeMirror-selected {
-    background: rgba(33, 171, 216, 1)!important;
-    /*    border: 1px solid rgb(130, 224, 255);*/
+    background: @powder!important;
 }
 
 // Working file list for when tabs aren't enabled
