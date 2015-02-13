@@ -281,6 +281,14 @@ ins.jstree-icon {
 /**
 * Custom Work For Brackets (https://github.com/DH3ALEJANDRO/custom-work-for-brackets)
 * --------------------------------------------------------------------*/
+#workfile-avril {
+  top: 42px;
+  right: 0;
+}
+.all-workfile {
+  background: #333639;
+  opacity: 1;
+}
 .AllTabWork,
 .avril-parent-work,
 .avril-parent-work .open-files-container ul,
