@@ -74,15 +74,15 @@
 }
 /* e.g. @font-face */
 .cm-meta {
-  color: #a7ec21;
+  color: #1dff00;
 }
 /* e.g. .box */
 .cm-qualifier {
-  color: #a7ec21;
+  color: #1dff00;
 }
 /* e.g. class="" id="" */
 .cm-attribute {
-  color: #a7ec21;
+  color: #1dff00;
 }
 /* highlighted selection */
 .cm-matchhighlight {
@@ -90,7 +90,7 @@
 }
 /* not sure if used */
 .cm-builtin {
-  color: #a7ec21;
+  color: #15d880;
 }
 .cm-bracket {
   color: #f9faf4;
@@ -141,7 +141,7 @@
   color: #242424;
 }
 .CodeMirror-matchingbracket {
-  color: #a7ec21 !important;
+  color: #15d880 !important;
   background: rgba(255, 255, 255, 0.15);
 }
 .CodeMirror-matchingtag {
@@ -281,6 +281,14 @@ ins.jstree-icon {
 /**
 * Custom Work For Brackets (https://github.com/DH3ALEJANDRO/custom-work-for-brackets)
 * --------------------------------------------------------------------*/
+.AllTabWork,
+.avril-parent-work,
+.avril-parent-work .open-files-container ul,
+.avril-tabs-work,
+.avril-tabs-work div,
+.avril-tabs-work li {
+  height: 40px!important;
+}
 .btn-mainToolbar-bks,
 .btn-sidebar-bks,
 .all-workfile,
@@ -305,19 +313,20 @@ ins.jstree-icon {
 }
 .avril-parent-work,
 .todoFunction,
-.avril-tabs-work li,
+.avril-tabs-work ul#sortableOneWork li,
 .avril-tabs-work div {
   height: 40px;
 }
-.avril-tabs-work ul li {
+.avril-tabs-work ul#sortableOneWork li {
   padding: 8px 30px 8px 20px;
-  height: 40px!important;
-}
-.avril-tabs-work ul li.selected {
-  border-bottom: 3px solid #21abd8;
   height: 20px!important;
 }
-.avril-tabs-work ul li:hover {
+.avril-tabs-work ul#sortableOneWork li.selected {
+  background: #26282a !important;
+  border-bottom: 3px solid #21abd8 !important;
+  height: 20px!important;
+}
+.avril-tabs-work ul#sortableOneWork li:hover {
   background: #26282a !important;
   height: 20px!important;
   border-bottom: 3px solid #21abd8;
@@ -340,7 +349,6 @@ ins.jstree-icon {
 }
 .CodeMirror .CodeMirror-selected {
   background: #21abd8 !important;
-  /*    border: 1px solid rgb(130, 224, 255);*/
 }
 #working-set-list-container > div:last-child ul {
   padding-bottom: 10px;
