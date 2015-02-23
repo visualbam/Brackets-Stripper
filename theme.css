@@ -316,7 +316,7 @@ ins.jstree-icon {
   padding-bottom: 15px!important;
 }
 .avril-tabs-work {
-  background-color: #333639!important;
+  background-color: #333639 !important;
 }
 .avril-parent-work {
   box-shadow: -10px 0px 19px -5px rgba(0, 0, 0, 0.5);
@@ -331,6 +331,7 @@ ins.jstree-icon {
 .avril-tabs-work ul#sortableOneWork li {
   padding: 8px 30px 8px 20px;
   height: 20px!important;
+  border-bottom: 3px solid #333639;
 }
 .avril-tabs-work ul#sortableOneWork li.selected {
   background: #26282a !important;
