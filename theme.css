@@ -259,12 +259,6 @@ ins.jstree-icon {
 /**
 * Brackets Git (https://github.com/zaggino/brackets-git)
 * --------------------------------------------------------------------*/
-#sidebar .git-close-not-modified.working-set-available {
-  right: 10px;
-}
-#sidebar .git-close-not-modified {
-  top: 9px;
-}
 .btn-alt-quiet {
   transition: all 0.25s ease-in-out;
 }
